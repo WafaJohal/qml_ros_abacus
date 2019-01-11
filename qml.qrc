@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>AbacusArea.qml</file>
+        <file>Bead.qml</file>
+        <file>shared/BoxBody.qml</file>
+        <file>shared/BoxBody.qmlc</file>
+        <file>shared/ChainBody.qml</file>
+        <file>shared/CircleBody.qml</file>
+        <file>shared/CircleBody.qmlc</file>
+        <file>shared/EdgeBody.qml</file>
+        <file>shared/ImageBoxBody.qml</file>
+        <file>shared/ImageBoxBody.qmlc</file>
+        <file>shared/PhysicsItem.qml</file>
+        <file>shared/PhysicsItem.qmlc</file>
+        <file>shared/PolygonBody.qml</file>
+        <file>shared/RectangleBoxBody.qml</file>
+        <file>shared/RectangleBoxBody.qmlc</file>
+        <file>shared/ScreenBoundaries.qml</file>
+        <file>shared/ScreenBoundaries.qmlc</file>
+        <file>main.cpp</file>
+        <file>shared/WindowBoundaries.qml</file>
+        <file>AbacusRow.qml</file>
+        <file>shared/AreaBoundaries.qml</file>
+    </qresource>
+</RCC>
