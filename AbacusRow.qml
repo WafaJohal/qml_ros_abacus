@@ -5,8 +5,8 @@ import './shared/'
 Rectangle {
     id:root
     property int row_nb: 0 // index of this row
-    property int nbBeads: 10
-    property int width_empty: 30 // defines the size of the empty space in a row
+    property int nbBeads: 5 // sets the number of bead per row
+    property int width_empty: 150 // defines the size of the empty space in a row
     property int rowCounter :0
     property Body pressedBody: null
 

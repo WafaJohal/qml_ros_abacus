@@ -19,6 +19,21 @@ Rectangle {
 
     signal pressedBead(var bead)
 
+    //onXChanged:
+     //   bead_xChangePublisher.text = ''+x
+
+//    RosStringPublisher {
+//        id: bead_xChangePublisher
+//        topic: "abacus/row"+my_row+"/bead"+order+"/xchange"
+//    }
+
+    RosStringSubscriber {
+        id: bead_xChangeSubscriber
+        topic: "abacus/row"+my_row+"/bead"+order+"/setX"
+        onTextChanged:
+            bead.x = parseInt(text)
+    }
+
 
     objectName: "bead_"+my_row.index+ "_"+order
 
