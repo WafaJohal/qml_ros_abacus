@@ -8,8 +8,8 @@ import Box2D 2.0
 Window {
     id:window
     visible: true
-    width: 640
-    height: 480
+    width: Screen.width
+    height: Screen.height
     title: qsTr("Hello World")
 
     AbacusArea{

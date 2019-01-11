@@ -6,25 +6,16 @@ Rectangle {
     id:abacusArea
     anchors.fill: parent
     property int nbRows: 3
-    property var listColors: ['red','green','blue']
 
 
 
-
-
-    // BOX2D WORLD
-    World {
-        id: physicsWorld
-        gravity: Qt.point(0.0, 0.0);
-
-    }
-
-    WindowBoundaries {}
 
 
     Repeater{
         model: nbRows
         AbacusRow{
+
+
             id: this_row
             row_nb: index
             color: 'transparent'
