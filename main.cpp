@@ -1,11 +1,11 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
-//#include <ros/ros.h>
+#include <ros/ros.h>
 
 int main(int argc, char *argv[])
 {
-     //ros::init(argc, argv,"abacus");
+     ros::init(argc, argv,"abacus");
 
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 

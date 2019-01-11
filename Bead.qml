@@ -2,7 +2,7 @@ import QtQuick 2.0
 import Box2D 2.0
 
 import './shared/'
-//import Ros 1.0
+import Ros 1.0
 
 
 
@@ -33,10 +33,16 @@ Rectangle {
             return Qt.rgba(0.2, 0.2, 1, 1);
     }
 
+
     gradient: Gradient {
         GradientStop { position: 0.0; color: randomColor(my_row) }
         GradientStop { position: 0.7; color: randomColor(my_row) }
         GradientStop { position: 1.0; color: "gray" }
+    }
+
+    RosStringPublisher{
+        id:collisionPub
+
     }
 
     CircleBody {
@@ -54,6 +60,7 @@ Rectangle {
         density: 1
         friction: 1
         restitution: 0
+
 
     }
 

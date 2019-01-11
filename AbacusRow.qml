@@ -7,8 +7,14 @@ Rectangle {
     property int row_nb: 0 // index of this row
     property int nbBeads: 10
     property int width_empty: 30 // defines the size of the empty space in a row
-
+    property int rowCounter :0
     property Body pressedBody: null
+
+
+    function updateRowCounter(){
+        //TODO
+        rowCounter = 0;
+    }
 
     Rectangle{
     width: parent.width
@@ -68,6 +74,7 @@ Rectangle {
 
 
     Repeater{
+        id:beadRepeater
         model:nbBeads
         Bead {
             id:bead
@@ -79,7 +86,13 @@ Rectangle {
             order: index
             my_row: root.row_nb
             onPressedBead: pressedBody = bead.body
+            onXChanged:
+                root.updateRowCounter()
             //physicsWorld: physicsWorld
         }
+
+
     }
+
+
 }
